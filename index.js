@@ -715,7 +715,7 @@ cup8=game.add.sprite(base5+2100,-410,'love8');
 	//Add hometown
 	var hometown = game.add.sprite(1600,h-440,'hometown');
 var style = { font: "16px monospace", fill: "#fff", align: "center" };
-	game.add.text(1600,h-250,"The first day I met you \n March 31st 2016 \n The luckiest day of my life", style);
+	game.add.text(1600,h-250,"The first day I met you \n April 10th 2017 \n The luckiest day of my life", style);
 	//Add fullstack
 	game.add.sprite(5925,h-360,'developer').scale.setTo(0.7,0.7);
 
