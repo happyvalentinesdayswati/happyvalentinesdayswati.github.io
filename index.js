@@ -433,7 +433,7 @@ function create(){
 	//Add Main Banner
 	//var building = game.add.sprite(500,h-600,'building');
 	//building.scale.setTo(0.75,0.75);
-	var banner = game.add.sprite(200,h-200-605,'mainbanner').scale.setTo(0.5,0.5);
+	var banner = game.add.sprite(200,h-200-305,'mainbanner').scale.setTo(0.5,0.5);
 
 	//Add birds
 	birds = game.add.sprite(50,50,'birds');
@@ -977,7 +977,17 @@ function fireBullet () {
             bullet2.body.velocity.y = -400;
             bulletTime = game.time.now + 300;
         }
-    
+		
+		 bullet3 = bullets.getFirstExists(false);
+
+    if (bullet3)
+        {
+            //  And fire it
+            bullet3.reset(hero.x+ hero.width/2, hero.y+100);
+            bullet3.scale.setTo(1.5,1);
+            bullet3.body.velocity.y = -400;
+            bulletTime = game.time.now + 300;
+        }
 
     }
 
@@ -1110,11 +1120,11 @@ console.log(hero.x);
 	if(hero.x >1700){
 	var diwali_board2 = game.add.tween(board1);
 	var diwali_board = game.add.tween(diwali_us);
-	diwali_board.to({y:h-550},200);
+	diwali_board.to({y:h-450},200);
     var diwali_board2 = game.add.tween(board1);
-	diwali_board2.to({y:h-600},200);
+	diwali_board2.to({y:h-500},200);
 		var text1anim = game.add.tween(text1);
-	text1anim.to({y:h-700},200);
+	text1anim.to({y:h-600},200);
 	diwali_board.start();
 	diwali_board2.start();
 		text1anim.start();
