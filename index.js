@@ -552,7 +552,7 @@ chris_ani.play('anic');// plays all the frames, at 1 frame per second, looping.
 	var style = { font: "16px monospace", fill: "#fff", align: "center" };
 
 		game.add.text(13400,h-350,"When I dance with you, I feel like nobody else is watching! \n Sorry for not taking the hint you gave me tat day :p",style);
-		game.add.text(14100,h-650,"Hope you didnt give me this look when I slept on your shoulder for the entire Chris Hemsworth movie! \n But I think Chris Hemsworth distracted you from the fact that I slept on your shoulders, mahn I hate him so much!!\n That moment was very special though",style);
+		game.add.text(14100,h-570,"Hope you didnt give me this look when I slept on your shoulder for the entire Chris Hemsworth movie! \n But I think Chris Hemsworth distracted you from the fact that I slept on your shoulders, mahn I hate him so much!!\n That moment was very special though",style);
 
 	triple = game.add.sprite(11270,h-250,'triple');
     triple.scale.setTo(0.3,0.3);
