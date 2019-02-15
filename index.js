@@ -592,10 +592,10 @@ chris_ani.play('anic');// plays all the frames, at 1 frame per second, looping.
 	cup2.scale.setTo(0.1,0.1);
 	game.add.text(base5+200,h-250,"All my memories with you are the best, \n and here are few of those!!",style_position);
 
-		game.add.text(base5+800,h,"This was when I left Udupi!",style_position);
-		game.add.text(base5+1600,h,"Our early morning date!",style_position);
+		game.add.text(base5+800,h-50,"This was when I left Udupi!",style_position);
+		game.add.text(base5+1600,h-50,"Our early morning date!",style_position);
 
-		game.add.text(base5+2000,h,"Remix night, Infinity war and the way you cried during Spiderman scene(Please dont tell the truth) and our Mangalore and Bangalore date. All those moments were precious and will always remain in heart!!",style_position);
+		game.add.text(base5+2000,h-50,"Remix night, Infinity war and the way you cried during Spiderman scene(Please dont tell the truth) and our Mangalore and Bangalore date. All those moments were precious and will always remain in heart!!",style_position);
 
 	cup3=game.add.sprite(base5+1820,-410,'love3');
 		cup3.scale.setTo(0.15,0.15);
@@ -1082,6 +1082,7 @@ function backButtonPressed(){
 }
 
 var check= false;
+var blastCheck =false;
 
 function update(){
 	transparent.x = hero.x + 600;
@@ -1182,10 +1183,13 @@ console.log(hero.x);
 
 var anim = blast_ani.play('anib');// plays all the frames, at 1 frame per second, looping.
 //anim.start();
+if(anim != null){
   anim.killOnComplete = true;
 
 blast_ani.scale.setTo(0.3,0.3);
 anim.onComplete.add(this.animComplete, this);
+blastCheck = true;
+}
 
 });
 		
